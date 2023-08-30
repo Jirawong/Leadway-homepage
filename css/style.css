@@ -22,6 +22,14 @@ a {
   font-size: 58px;
 }
 
+.header-bg {
+  background-color: #070065;
+}
+
+.bg-1 {
+  background-color: rgba(0, 0, 0, 30%);
+}
+
 /**********************************/
 /************  NAVBAR  ************/
 /**********************************/
@@ -131,15 +139,36 @@ a {
 }
 
 /***********************************/
-/************ SECTION-1 ************/
+/************ SECTION-2 ************/
 /**********************************/
 .section-2 h3 {
   font-size: 28px;
+}
+.section-2,
+.section-4 {
+  background-image: url(../assets/Web\ LeadWay\ 2\ middle\ 1-02.png);
 }
 
 .section-2 h3 span {
   font-size: 32px;
 }
+
+/***********************************/
+/************ SECTION-3 ************/
+/**********************************/
+.section-3 h2,
+.section-4 h3 {
+  font-size: 26px;
+}
+
+/***********************************/
+/************ SECTION-3 ************/
+/**********************************/
+
+.section-4 h2 {
+  font-size: 40px;
+}
+
 /***********************************/
 /************ section-5 ************/
 /**********************************/
@@ -207,22 +236,48 @@ a {
   left: -50px;
 }
 
-.section-5 .row-3 img {
-  top: 0;
-  left: 5px;
-  width: 300px;
+.section-5 .wheel-loader img {
+  top: auto;
+  bottom: 0;
+  width: 125%;
 }
-
+.section-5 .spare-part img {
+  top: 10%;
+  left: 0;
+  width: 100%;
+}
 /**********************************/
 /************  Footer  ************/
 /**********************************/
 .footer-content {
   background-image: url(../assets/Web\ LeadWay\ 2\ middle\ 1-02.png);
 }
+
+.footer-bg-component {
+  height: 100%;
+  width: 100%;
+}
+
+.footer-1 {
+  bottom: -40%;
+  left: -10%;
+  z-index: 1;
+}
+.footer-1 img {
+  width: 50vw;
+}
+.footer-2 {
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
 .contact-btn img {
   z-index: 0;
   top: -30px;
   left: -50px;
+}
+.footer h5 {
+  font-size: 22px;
 }
 @media (max-width: 992px) {
   .head-topic {
@@ -238,6 +293,10 @@ a {
     top: 35px;
 
     left: 0;
+  }
+
+  .navbar-brand img {
+    width: 75%;
   }
   /***********************************/
   /************ HEADER ***************/
@@ -293,6 +352,17 @@ a {
   .section-3 .sub-topic {
     font-size: calc(8px + 5vw);
   }
+  .section-3 h2,
+  .section-4 h3 {
+    font-size: calc(6px + 3vw);
+  }
+
+  /***********************************/
+  /************ footer ************/
+  /**********************************/
+  .footer h5 {
+    font-size: calc(2 + 3vw);
+  }
 }
 
 @media (max-width: 576px) {
@@ -323,6 +393,13 @@ a {
     width: 325px;
   }
 
+  /***********************************/
+  /************ section-3 ************/
+  /**********************************/
+
+  .section-3 h2 {
+    font-size: calc(6px + 4vw);
+  }
   .section-3 .head-topic {
     font-size: calc(5px + 6vw);
   }
