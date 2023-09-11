@@ -33,21 +33,88 @@ a {
 /**********************************/
 /************  NAVBAR  ************/
 /**********************************/
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-  top: 73px;
-  padding: 0 15px;
-  border-radius: 0;
-  background-color: #e5e8ed;
+.navbar {
+  transition: all 0.2s ease-in-out;
+}
+.navbar:hover,
+.navbar.scrolled {
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+.navbar:hover p,
+.navbar.scrolled p {
+  color: #000;
 }
 
-.navbar-expand-lg .navbar-nav .dropdown-menu .line {
-  position: absolute;
-  background-color: #ffbe2c;
-  width: 50%;
-  height: 8px;
-  top: -8px;
-  left: 0;
+.navbar:hover svg,
+.navbar.scrolled svg {
+  fill: #000;
 }
+
+.dropdown:hover .dropdown-menu {
+  transform: scaleY(1) !important;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  border-radius: 0;
+  background-color: #e5e8ed;
+  transition: all 0.3s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: top center;
+}
+
+@media (min-width: 1000px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu,
+  .dropdown-menu {
+    width: 100vw;
+    display: block;
+    position: fixed;
+    left: -1px;
+    top: 105px;
+    border-radius: 0;
+    background-color: #1e4183;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top center;
+  }
+  .dropdown-menu .head {
+    font-size: 48px !important;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu li {
+    list-style-type: none;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu a {
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.15s ease-in-out;
+    font-weight: 400;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu a:hover {
+    color: #ecb51d;
+  }
+}
+
+@media (max-width: 999px) {
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  .navbar p {
+    color: #000;
+  }
+  .navbar svg {
+    fill: #000;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu.show {
+  width: 100vw;
+  transform: scaleY(1);
+  transform-origin: top center;
+  transition: all 0.3s ease-in-out;
+}
+
 .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
   padding: 10px 50px 10px 0px;
   border-bottom: 1.5px solid #fff;
@@ -60,11 +127,37 @@ a {
 .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item:hover span {
   color: #ffbe2c !important;
 }
+
+.nav-link:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar input {
+  font-size: 20px;
+  padding: 20px 15px;
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.navbar .search-btn p {
+  font-size: 24px;
+}
+.navbar .search-btn {
+  background-color: #ecb51d;
+  border: none;
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+.navbar .search-btn:hover {
+  background-color: #ffbe2c;
+}
 /***********************************/
 /************ HEADER ***************/
 /**********************************/
 .header .background {
   height: auto;
+  top: -200px;
 }
 .header .background .head-1 {
   position: relative;
@@ -156,6 +249,22 @@ a {
 /***********************************/
 /************ SECTION-3 ************/
 /**********************************/
+.section-3 .cards:hover h1 {
+  color: #ecb51d !important;
+  transition: all 0.2s ease-in-out;
+}
+.section-3 .cards .img-container {
+  width: 347px;
+  overflow: hidden;
+}
+
+.section-3 .cards * {
+  transition: all 0.3s ease-in-out;
+}
+.section-3 .cards:hover .overlay {
+  transform: translateX(-350px);
+  transition: all 0.5s ease-in-out;
+}
 .section-3 h2,
 .section-4 h3 {
   font-size: 26px;
@@ -173,12 +282,17 @@ a {
 /************ section-5 ************/
 /**********************************/
 
+.section-5 a:hover .card {
+  background-color: #ecb51d;
+  transition: all 0.2s ease-in-out;
+}
 .card {
   position: relative;
   height: 300px;
   width: 300px;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 !important;
+  transition: all 0.2s ease-in-out;
 }
 
 .card::after {
@@ -313,6 +427,9 @@ a {
     font-size: calc(8px + 2vw);
   }
 
+  .header .background {
+    top: auto;
+  }
   .header .rounded-circle.bg-white {
     width: 30px;
     height: 30px;

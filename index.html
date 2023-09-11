@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="scss/custom.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/pluem.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +17,7 @@
     />
   </head>
   <body>
-    <div class="header-bg py-3">
+    <div class="header-bg py-3 d-none">
       <div class="container">
         <div
           class="row row-cols-lg-2 row-cols-1 align-items-center justify-content-lg-between"
@@ -71,12 +70,13 @@
 
     <!-- navbar -->
     <nav
-      class="navbar navbar-expand-lg py-4 bg-white font-roboto fw-bold text-uppercase sticky-top"
+      class="navbar navbar-expand-lg py-4 font-roboto fw-bold text-uppercase sticky-top"
     >
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="assets/Logo.svg" class="img-fluid" alt=""
         /></a>
+        <div class=""></div>
         <button
           class="navbar-toggler"
           type="button"
@@ -93,115 +93,256 @@
           id="navbarNavDropdown"
         >
           <ul
-            class="navbar-nav d-flex justify-content-between w-100 px-xl-9 pt-lg-0 pt-5"
+            class="navbar-nav d-flex justify-content-between w-100 ps-lg-7 pt-lg-0 pt-5"
           >
             <li class="nav-item dropdown">
               <a
-                class="nav-link d-flex align-items-center"
+                class="nav-link d-flex align-items-center text-white"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
-                data-bs-offset="100,200"
               >
                 <p class="mb-0 me-1">Home</p>
                 <img src="assets/dropdown.svg" alt="" />
               </a>
               <ul class="dropdown-menu">
-                <div class="line"></div>
-                <li>
-                  <a class="dropdown-item" href="#"><span>About us</span></a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    ><span>All Products</span></a
-                  >
-                </li>
+                <div class="container d-lg-block d-none py-5">
+                  <div class="row row-cols-4 align-items-center">
+                    <div class="col head d-lg-block d-none">
+                      <a href="#"
+                        ><h1 class="text-white head fw-bold">Home</h1>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li><a href="#">Example-1</a></li>
+                        <li><a href="#">Example-2</a></li>
+                        <li><a href="#">Example-3</a></li>
+                        <li><a href="#">Example-4</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li><a href="#">Example-1</a></li>
+                        <li><a href="#">Example-2</a></li>
+                        <li><a href="#">Example-3</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li><a href="#">Example-1</a></li>
+                        <li><a href="#">Example-2</a></li>
+                        <li><a href="#">Example-3</a></li>
+                        <li><a href="#">Example-4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-1</a></li>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-2</a></li>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-3</a></li>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-4</a></li>
+                </div>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link d-flex align-items-center"
+                class="nav-link d-flex align-items-center text-white"
                 href="#"
-                role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 <p class="mb-0 me-1">Product & service</p>
                 <img src="assets/dropdown.svg" alt="" />
               </a>
               <ul class="dropdown-menu">
-                <div class="line"></div>
-                <li>
-                  <a class="dropdown-item" href="#"><span>Example-1</span></a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"><span>Example-2</span></a>
-                </li>
+                <div class="container d-lg-block d-none py-5">
+                  <div class="row row-cols-3 align-items-center">
+                    <div class="col head d-lg-block d-none">
+                      <a href="#"
+                        ><h1 class="text-white head fw-bold">
+                          Product <br />
+                          & Service
+                        </h1>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li><a href="#">Example-1</a></li>
+                        <li><a href="#">Example-2</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li><a href="#">Example-1</a></li>
+                        <li><a href="#">Example-2</a></li>
+                        <li><a href="#">Example-3</a></li>
+                        <li><a href="#">Example-4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-1</a></li>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-2</a></li>
+                </div>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link d-flex align-items-center"
+                class="nav-link d-flex align-items-center text-white"
                 href="#"
-                role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 <p class="mb-0 me-1">Promotion</p>
                 <img src="assets/dropdown.svg" alt="" />
               </a>
               <ul class="dropdown-menu">
-                <div class="line"></div>
-                <li>
-                  <a class="dropdown-item" href="#"><span>Example-1</span></a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"><span>Example-2</span></a>
-                </li>
+                <div class="container d-lg-block d-none py-5">
+                  <div class="row row-cols-3 align-items-center">
+                    <div class="col head d-lg-block d-none">
+                      <a href="#"
+                        ><h1 class="text-white head fw-bold">Promotion</h1>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li><a href="#">Example-1</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li><a href="#">Example-1</a></li>
+                        <li><a href="#">Example-2</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-1</a></li>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-2</a></li>
+                </div>
               </ul>
             </li>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link d-flex align-items-center"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center text-white" href="#">
                 <p class="mb-0 me-1">Contact</p>
-                <img src="assets/dropdown.svg" alt="" />
               </a>
-              <ul class="dropdown-menu">
-                <div class="line"></div>
-                <li>
-                  <a class="dropdown-item" href="#"><span>Example-1</span></a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"><span>Example-2</span></a>
-                </li>
-              </ul>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link d-flex align-items-center"
+                class="nav-link d-flex align-items-center text-white"
                 href="#"
-                role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 <p class="mb-0 me-1">New & service</p>
                 <img src="assets/dropdown.svg" alt="" />
               </a>
               <ul class="dropdown-menu">
-                <div class="line"></div>
-                <li>
-                  <a class="dropdown-item" href="#"><span>Example-1</span></a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"><span>Example-2</span></a>
-                </li>
+                <div class="container d-lg-block d-none py-5">
+                  <div class="row row-cols-4 align-items-center">
+                    <div class="col head d-lg-block d-none">
+                      <a href="#"
+                        ><h1 class="text-white head fw-bold">
+                          New <br />
+                          & Service
+                        </h1>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li><a href="#">Example-1</a></li>
+                        <li><a href="#">Example-2</a></li>
+                        <li><a href="#">Example-3</a></li>
+                        <li><a href="#">Example-4</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li><a href="#">Example-1</a></li>
+                        <li><a href="#">Example-2</a></li>
+                        <li><a href="#">Example-3</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li><a href="#">Example-1</a></li>
+                        <li><a href="#">Example-2</a></li>
+                        <li><a href="#">Example-3</a></li>
+                        <li><a href="#">Example-4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-1</a></li>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-2</a></li>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-3</a></li>
+                </div>
+                <div class="dropdown-item d-lg-none">
+                  <li><a href="#" class="nav-link ps-1 py-0">Example-4</a></li>
+                </div>
+              </ul>
+            </li>
+            <li class="dropdown d-lg-block d-none">
+              <a
+                class="d-flex align-items-center text-white"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 50 50"
+                  fill="#fff"
+                >
+                  <path
+                    d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                  ></path>
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <div class="container d-lg-flex d-none py-5">
+                  <input
+                    type="text"
+                    placeholder="what are you looking for?"
+                    class="search-input"
+                  />
+                  <button class="search-btn d-flex align-items-center ms-5 p-3">
+                    <p class="fw-bold mb-0 me-3">Search</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 50 50"
+                      fill="#fff"
+                    >
+                      <path
+                        d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
               </ul>
             </li>
           </ul>
@@ -318,14 +459,21 @@
         <h1 class="font-roboto head-topic fw-bold text-yellow-1 mb-0">
           OUR PROMISE
         </h1>
-        <h2 class="fw-normal sub-topic ps-lg-3 ps-2">(พันธสัญญา)</h2>
+        <h1 class="fw-normal sub-topic ps-lg-3 ps-2">(พันธสัญญา)</h1>
       </div>
       <div class="row row-cols-lg-3 rows-cols-1 gy-5 pt-5">
-        <div class="">
+        <div class="cards">
           <div class="d-flex flex-column align-items-center h-100">
             <div class="bg-black">
-              <img src="assets/Group 256.png" class="img-fluid" alt="" />
-              <h1 class="text-yellow-1 text-center">ลูกค้า</h1>
+              <div class="img-container position-relative d-flex">
+                <img
+                  src="assets/Group 3487.svg"
+                  class="position-absolute overlay img-fluid"
+                  alt=""
+                />
+                <img src="assets/Group 256.png" class="img-fluid" alt="" />
+              </div>
+              <h1 class="text-white text-center">ลูกค้า</h1>
             </div>
             <div class="pt-3">
               <h2 class="fw-normal f-26 text-center">
@@ -340,10 +488,17 @@
           </div>
         </div>
 
-        <div class="">
+        <div class="cards">
           <div class="d-flex flex-column align-items-center h-100">
             <div class="bg-black">
-              <img src="assets/Group 3487.svg" class="img-fluid" alt="" />
+              <div class="img-container position-relative d-flex">
+                <img
+                  src="assets/Group 3487.svg"
+                  class="position-absolute overlay img-fluid"
+                  alt=""
+                />
+                <img src="assets/Group 256.png" class="img-fluid" alt="" />
+              </div>
               <h1 class="text-white text-center">คู่ค้า</h1>
             </div>
             <div class="pt-3">
@@ -359,10 +514,17 @@
           </div>
         </div>
 
-        <div class="">
+        <div class="cards">
           <div class="d-flex flex-column align-items-center h-100">
             <div class="bg-black">
-              <img src="assets/Group 3488.svg" class="img-fluid" alt="" />
+              <div class="img-container position-relative d-flex">
+                <img
+                  src="assets/Group 3488.svg"
+                  class="position-absolute overlay img-fluid"
+                  alt=""
+                />
+                <img src="assets/Group 256.png" class="img-fluid" alt="" />
+              </div>
               <h1 class="text-white text-center">พนักงาน</h1>
             </div>
             <div class="pt-3">
@@ -448,11 +610,13 @@
 
     <!-- section-5 -->
     <section class="section-5">
-      <h1 class="text-center text-yellow-1 font-roboto my-5">ALL PRODUCTS</h1>
+      <h1 class="text-center text-yellow-1 font-roboto my-5 head-topic">
+        ALL PRODUCTS
+      </h1>
       <div class="container">
         <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-7">
           <a href="#">
-            <div class="card bg-yellow-1 mx-auto">
+            <div class="card mx-auto">
               <img src="assets/highlight.png" alt="" />
             </div>
             <div
@@ -637,5 +801,6 @@
     </footer>
     <!-- footer end-->
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
