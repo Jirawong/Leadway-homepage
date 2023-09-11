@@ -168,12 +168,9 @@ a {
 }
 .carousel-indicators {
   bottom: auto;
-  top: 10%;
+  top: 10vh;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  margin-bottom: 70vh;
-}
+
 .header .background {
   height: auto;
   animation: zoom 10s linear infinite;
