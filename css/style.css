@@ -166,6 +166,14 @@ a {
 #myCarousel button {
   z-index: 100;
 }
+.carousel-indicators {
+  bottom: auto;
+  top: 10%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  margin-bottom: 70vh;
+}
 .header .background {
   height: auto;
   animation: zoom 10s linear infinite;
