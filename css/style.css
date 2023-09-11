@@ -163,6 +163,9 @@ a {
     transform: scale(1.2);
   }
 }
+#myCarousel button {
+  z-index: 100;
+}
 .header .background {
   height: auto;
   animation: zoom 10s linear infinite;
