@@ -7,6 +7,7 @@
     <title>Leadway</title>
 
     <link rel="stylesheet" href="scss/custom.css" />
+
     <link rel="stylesheet" href="css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,7 +71,7 @@
 
     <!-- navbar -->
     <nav
-      class="navbar navbar-expand-lg py-4 font-roboto fw-bold text-uppercase sticky-top"
+      class="navbar navbar-expand-lg pt-3 pb-2 font-roboto fw-bold text-uppercase position-fixed sticky-top z-3 w-100"
     >
       <div class="container">
         <a class="navbar-brand" href="#"
@@ -353,34 +354,133 @@
 
     <!-- header-->
     <section class="header position-relative">
-      <div class="background position-relative">
-        <img src="assets/head-1.png" class="img-fluid head-1" alt="" />
-        <img src="assets/head-2.png" class="img-fluid head-2" alt="" />
-      </div>
-      <div class="position-absolute">
-        <div class="container">
-          <div class="row pt-lg-6 pt-4 ms-lg-0 ms-3">
-            <div class="col-lg-6 d-flex flex-column">
-              <h1 class="text-yellow-1 font-roboto mb-0 lh-1">LEADWAY</h1>
-              <h2 class="text-white lh-1">ผู้จัดจำหน่าย</h2>
-              <p class="text-yellow-1">
-                รถขุดและเครื่องจักรกลหนัก
-                <br />ที่มีประสิทธิภาพยอดเยี่ยม
-              </p>
-              <div class="ms-lg-5 mt-lg-4">
-                <a href="#" class="d-flex">
-                  <div
-                    class="rounded-pill border border-5 border-yellow-1 px-lg-3 py-lg-1 px-1 py-1 d-flex align-items-center"
-                  >
-                    <p class="text-white mb-0 me-4">PRODUCTS</p>
-                    <div class="rounded-circle bg-white">
-                      <img src="assets/cursor.svg" alt="" />
+      <div
+        id="myCarousel"
+        class="carousel slide"
+        data-bs-ride="true"
+        data-bs-interval="2000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="background position-relative">
+              <img src="assets/head-1.png" class="img-fluid head-1" alt="" />
+              <img src="assets/head-2.png" class="img-fluid head-2" alt="" />
+            </div>
+            <div class="position-absolute pt-6">
+              <div class="container">
+                <div class="row pt-lg-6 pt-4 ms-lg-0 ms-3">
+                  <div class="col-lg-6 d-flex flex-column">
+                    <h1 class="text-yellow-1 font-roboto mb-0 lh-1">LEADWAY</h1>
+                    <h2 class="text-white lh-1">ผู้จัดจำหน่าย</h2>
+                    <p class="text-yellow-1">
+                      รถขุดและเครื่องจักรกลหนัก
+                      <br />ที่มีประสิทธิภาพยอดเยี่ยม
+                    </p>
+                    <div class="ms-lg-5 mt-lg-4">
+                      <a href="#" class="d-flex">
+                        <div
+                          class="rounded-pill border border-5 border-yellow-1 px-lg-3 py-lg-1 px-1 py-1 d-flex align-items-center"
+                        >
+                          <p class="text-white mb-0 me-4">PRODUCTS</p>
+                          <div class="rounded-circle bg-white">
+                            <img src="assets/cursor.svg" alt="" />
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
-                </a>
+                  <div class="col-6"></div>
+                </div>
               </div>
             </div>
-            <div class="col-6"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="background position-relative">
+              <img src="assets/head-1.png" class="img-fluid head-1" alt="" />
+              <img src="assets/head-2.png" class="img-fluid head-2" alt="" />
+            </div>
+            <div class="position-absolute pt-6">
+              <div class="container">
+                <div class="row pt-lg-6 pt-4 ms-lg-0 ms-3">
+                  <div class="col-lg-6 d-flex flex-column">
+                    <h1 class="text-yellow-1 font-roboto mb-0 lh-1">LEADWAY</h1>
+                    <h2 class="text-white lh-1">ผู้จัดจำหน่าย</h2>
+                    <p class="text-yellow-1">
+                      รถขุดและเครื่องจักรกลหนัก
+                      <br />ที่มีประสิทธิภาพยอดเยี่ยม
+                    </p>
+                    <div class="ms-lg-5 mt-lg-4">
+                      <a href="#" class="d-flex">
+                        <div
+                          class="rounded-pill border border-5 border-yellow-1 px-lg-3 py-lg-1 px-1 py-1 d-flex align-items-center"
+                        >
+                          <p class="text-white mb-0 me-4">PRODUCTS</p>
+                          <div class="rounded-circle bg-white">
+                            <img src="assets/cursor.svg" alt="" />
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="background position-relative">
+              <img src="assets/head-1.png" class="img-fluid head-1" alt="" />
+              <img src="assets/head-2.png" class="img-fluid head-2" alt="" />
+            </div>
+            <div class="position-absolute pt-6">
+              <div class="container">
+                <div class="row pt-lg-6 pt-4 ms-lg-0 ms-3">
+                  <div class="col-lg-6 d-flex flex-column">
+                    <h1 class="text-yellow-1 font-roboto mb-0 lh-1">LEADWAY</h1>
+                    <h2 class="text-white lh-1">ผู้จัดจำหน่าย</h2>
+                    <p class="text-yellow-1">
+                      รถขุดและเครื่องจักรกลหนัก
+                      <br />ที่มีประสิทธิภาพยอดเยี่ยม
+                    </p>
+                    <div class="ms-lg-5 mt-lg-4">
+                      <a href="#" class="d-flex">
+                        <div
+                          class="rounded-pill border border-5 border-yellow-1 px-lg-3 py-lg-1 px-1 py-1 d-flex align-items-center"
+                        >
+                          <p class="text-white mb-0 me-4">PRODUCTS</p>
+                          <div class="rounded-circle bg-white">
+                            <img src="assets/cursor.svg" alt="" />
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -800,7 +900,16 @@
       </div>
     </footer>
     <!-- footer end-->
-    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const myCarouselElement = document.querySelector("#myCarousel");
+
+      const carousel = new bootstrap.Carousel(myCarouselElement, {
+        cycle: true,
+        interval: 2000,
+      });
+    </script>
   </body>
 </html>

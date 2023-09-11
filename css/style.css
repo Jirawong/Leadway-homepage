@@ -70,7 +70,7 @@ a {
     display: block;
     position: fixed;
     left: -1px;
-    top: 105px;
+    top: 87px;
     border-radius: 0;
     background-color: #1e4183;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -155,9 +155,17 @@ a {
 /***********************************/
 /************ HEADER ***************/
 /**********************************/
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 .header .background {
   height: auto;
-  top: -200px;
+  animation: zoom 10s linear infinite;
 }
 .header .background .head-1 {
   position: relative;
