@@ -169,7 +169,7 @@ a {
 }
 .carousel-indicators {
   bottom: auto;
-  top: 10vh;
+  top: 15vh;
 }
 
 .header .background {
@@ -252,7 +252,7 @@ a {
 /************ SECTION-2 ************/
 /**********************************/
 .section-2 h3 {
-  font-size: 28px;
+  font-size: calc(3px + 1.5vw);
 }
 .section-2,
 .section-4 {
@@ -260,7 +260,7 @@ a {
 }
 
 .section-2 h3 span {
-  font-size: 32px;
+  font-size: calc(3px + 1.75vw);
 }
 
 /***********************************/
@@ -284,7 +284,7 @@ a {
 }
 .section-3 h2,
 .section-4 h3 {
-  font-size: 26px;
+  font-size: calc(3px + 1.3vw);
 }
 
 /***********************************/
@@ -292,7 +292,7 @@ a {
 /**********************************/
 
 .section-4 h2 {
-  font-size: 40px;
+  font-size: calc(3px + 2vw);
 }
 
 /***********************************/
@@ -422,12 +422,42 @@ a {
   /**********************************/
   .navbar-expand-lg .navbar-nav .dropdown-menu .line {
     top: 35px;
-
     left: 0;
   }
+  #searchMenuSmall {
+    width: 100vw;
+    position: fixed;
+    right: 5px;
+    top: 87px;
+    border-radius: 0;
+    padding: 0 15px;
+    background-color: #1e4183;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  #searchMenuSmall input {
+    width: auto !important;
+  }
 
-  .navbar-brand img {
-    width: 75%;
+  .navbar-nav {
+    background-color: #1e4183 !important;
+  }
+  .navbar .nav-item a {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .navbar .nav-item a p {
+    color: #fff;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    padding-left: 2rem;
+  }
+  .navbar .container {
+    align-items: center;
+    padding: 0;
+  }
+  .navbar-brand {
+    width: 50%;
+    margin: 1rem;
   }
   /***********************************/
   /************ HEADER ***************/
@@ -488,9 +518,12 @@ a {
   }
   .section-3 h2,
   .section-4 h3 {
-    font-size: calc(6px + 3vw);
+    font-size: calc(6px + 2vw);
   }
 
+  .section-4 h2 {
+    font-size: calc(3px + 5vw);
+  }
   /***********************************/
   /************ footer ************/
   /**********************************/

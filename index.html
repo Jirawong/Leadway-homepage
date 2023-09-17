@@ -71,30 +71,78 @@
 
     <!-- navbar -->
     <nav
-      class="navbar navbar-expand-lg pt-3 pb-2 font-roboto fw-bold text-uppercase position-fixed sticky-top w-100"
+      class="navbar navbar-expand-lg pt-3 pb-lg-2 pb-0 font-roboto fw-bold text-uppercase position-fixed sticky-top w-100"
     >
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="assets/Logo.svg" class="img-fluid" alt=""
         /></a>
-        <div class=""></div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="d-flex mx-3 gap-3">
+          <div class="dropdown d-lg-none d-block">
+            <a
+              class="d-flex align-items-center text-white"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="40"
+                height="40"
+                viewBox="0 0 50 50"
+                fill="#fff"
+              >
+                <path
+                  d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                ></path>
+              </svg>
+            </a>
+            <ul class="dropdown-menu" id="searchMenuSmall">
+              <div class="container d-flex py-5">
+                <input
+                  type="text"
+                  placeholder="what are you looking for?"
+                  class="search-input"
+                />
+                <button class="search-btn d-flex align-items-center p-3">
+                  <p class="fw-bold mb-0 me-3">Search</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 50 50"
+                    fill="#fff"
+                  >
+                    <path
+                      d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </ul>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
         <div
           class="collapse navbar-collapse flex-grow-1"
           id="navbarNavDropdown"
         >
           <ul
-            class="navbar-nav d-flex justify-content-between w-100 ps-lg-7 pt-lg-0 pt-5"
+            class="navbar-nav d-flex justify-content-between w-100 ps-lg-7 pt-lg-0 pt-3"
           >
             <li class="nav-item dropdown">
               <a
@@ -858,7 +906,8 @@
     </footer>
     <!-- footer end-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="js/bootstrap.bundle.js"></script>
     <script>
       const myCarouselElement = document.querySelector("#myCarousel");
 
